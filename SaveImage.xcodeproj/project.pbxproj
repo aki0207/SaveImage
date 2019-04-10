@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A856CC9F378664A8379FF67B /* Pods_SaveImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9698D35A11C7C6C5BF99B26F /* Pods_SaveImage.framework */; };
 		C586CBC3225DB04600B45902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C586CBC2225DB04600B45902 /* AppDelegate.swift */; };
 		C586CBC5225DB04600B45902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C586CBC4225DB04600B45902 /* ViewController.swift */; };
 		C586CBC8225DB04600B45902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C586CBC6225DB04600B45902 /* Main.storyboard */; };
 		C586CBCA225DB04800B45902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C586CBC9225DB04800B45902 /* Assets.xcassets */; };
 		C586CBCD225DB04800B45902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C586CBCB225DB04800B45902 /* LaunchScreen.storyboard */; };
+		C586CBD9225DB77200B45902 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C586CBD8225DB77200B45902 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3218C8A91C4087D81246F810 /* Pods-SaveImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveImage.debug.xcconfig"; path = "Target Support Files/Pods-SaveImage/Pods-SaveImage.debug.xcconfig"; sourceTree = "<group>"; };
+		8A40528FB9D83FD30B28ADA8 /* Pods-SaveImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveImage.release.xcconfig"; path = "Target Support Files/Pods-SaveImage/Pods-SaveImage.release.xcconfig"; sourceTree = "<group>"; };
+		9698D35A11C7C6C5BF99B26F /* Pods_SaveImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C586CBBF225DB04600B45902 /* SaveImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C586CBC2225DB04600B45902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C586CBC4225DB04600B45902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C586CBC9225DB04800B45902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C586CBCC225DB04800B45902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C586CBCE225DB04800B45902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C586CBD8225DB77200B45902 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A856CC9F378664A8379FF67B /* Pods_SaveImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				C586CBC1225DB04600B45902 /* SaveImage */,
 				C586CBC0225DB04600B45902 /* Products */,
+				CF43A3AA01FCB05C70271622 /* Pods */,
+				DCD3DD5FB36ABC5AAC3B63AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				C586CBC2225DB04600B45902 /* AppDelegate.swift */,
+				C586CBD8225DB77200B45902 /* User.swift */,
 				C586CBC4225DB04600B45902 /* ViewController.swift */,
 				C586CBC6225DB04600B45902 /* Main.storyboard */,
 				C586CBC9225DB04800B45902 /* Assets.xcassets */,
@@ -64,6 +74,23 @@
 			path = SaveImage;
 			sourceTree = "<group>";
 		};
+		CF43A3AA01FCB05C70271622 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3218C8A91C4087D81246F810 /* Pods-SaveImage.debug.xcconfig */,
+				8A40528FB9D83FD30B28ADA8 /* Pods-SaveImage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCD3DD5FB36ABC5AAC3B63AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9698D35A11C7C6C5BF99B26F /* Pods_SaveImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C586CBD1225DB04800B45902 /* Build configuration list for PBXNativeTarget "SaveImage" */;
 			buildPhases = (
+				77E29E91FE050B96DDAF299F /* [CP] Check Pods Manifest.lock */,
 				C586CBBB225DB04600B45902 /* Sources */,
 				C586CBBC225DB04600B45902 /* Frameworks */,
 				C586CBBD225DB04600B45902 /* Resources */,
+				5925E25F37AAAB6ED9377C93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5925E25F37AAAB6ED9377C93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaveImage/Pods-SaveImage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaveImage/Pods-SaveImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E29E91FE050B96DDAF299F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaveImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C586CBBB225DB04600B45902 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C586CBD9225DB77200B45902 /* User.swift in Sources */,
 				C586CBC5225DB04600B45902 /* ViewController.swift in Sources */,
 				C586CBC3225DB04600B45902 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +359,7 @@
 		};
 		C586CBD2225DB04800B45902 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3218C8A91C4087D81246F810 /* Pods-SaveImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +377,7 @@
 		};
 		C586CBD3225DB04800B45902 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A40528FB9D83FD30B28ADA8 /* Pods-SaveImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
